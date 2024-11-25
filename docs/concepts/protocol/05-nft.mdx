@@ -8,6 +8,7 @@ import Link from "@docusaurus/Link";
 import { links } from "@site/src/constants";
 import NFTGalleryURL from "@site/static/img/nft-gallery.png";
 import NFTSVG from "@site/static/img/nft.svg";
+import Image from "@theme/IdealImage";
 
 The Sablier Protocol wraps every stream in an ERC-721 non-fungible token (NFT), making the stream recipient the owner of
 the NFT. The recipient can transfer the NFT to another address, and this also transfers the right to withdraw funds from
@@ -77,3 +78,5 @@ based on user data. Here's an example for a stream that is 42.35% way through:
 ### Gallery of Multiple Sablier NFT SVGs
 
 <img src={NFTGalleryURL} height={500} width={500} />
+
+<Image img={NFTGalleryURL} height={500} width={500} size={500} />

@@ -37,6 +37,14 @@ const config: Config = {
   ],
   plugins: [
     [
+      "@docusaurus/plugin-ideal-image",
+      {
+        disableInDev: false,
+        quality: 70,
+        size: 500
+      },
+    ],
+    [
       "@docusaurus/plugin-client-redirects",
       // V1 redirects
       {
