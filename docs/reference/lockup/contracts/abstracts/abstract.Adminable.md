@@ -1,10 +1,10 @@
 # Adminable
 
-[Git Source](https://github.com/sablier-labs/flow/blob/32ac99c89393009166ca05e9a4e75ac34a442139/src/abstracts/Adminable.sol)
+[Git Source](https://github.com/sablier-labs/lockup/blob/076eba971fea7bb38fe75ee5108f0589c26152c0/src/abstracts/Adminable.sol)
 
-**Inherits:** [IAdminable](/docs/reference/flow/contracts/interfaces/interface.IAdminable.md)
+**Inherits:** [IAdminable](/docs/reference/lockup/contracts/interfaces/interface.IAdminable.md)
 
-See the documentation in [IAdminable](/docs/reference/flow/contracts/interfaces/interface.IAdminable.md).
+See the documentation in [IAdminable](/docs/reference/lockup/contracts/interfaces/interface.IAdminable.md).
 
 ## State Variables
 
@@ -25,6 +25,20 @@ Reverts if called by any account other than the admin.
 ```solidity
 modifier onlyAdmin();
 ```
+
+### constructor
+
+_Emits a {TransferAdmin} event._
+
+```solidity
+constructor(address initialAdmin);
+```
+
+**Parameters**
+
+| Name           | Type      | Description                       |
+| -------------- | --------- | --------------------------------- |
+| `initialAdmin` | `address` | The address of the initial admin. |
 
 ### transferAdmin
 

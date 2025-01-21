@@ -1,8 +1,10 @@
-# IBatch
+# Batch
 
-[Git Source](https://github.com/sablier-labs/flow/blob/32ac99c89393009166ca05e9a4e75ac34a442139/src/interfaces/IBatch.sol)
+[Git Source](https://github.com/sablier-labs/lockup/blob/076eba971fea7bb38fe75ee5108f0589c26152c0/src/abstracts/Batch.sol)
 
-This contract implements logic to batch call any function.
+**Inherits:** [IBatch](/docs/reference/lockup/contracts/interfaces/interface.IBatch.md)
+
+See the documentation in [IBatch](/docs/reference/lockup/contracts/interfaces/interface.IBatch.md).
 
 ## Functions
 
@@ -14,7 +16,7 @@ _Since `msg.value` can be reused across calls, be VERY CAREFUL when using it. Re
 https://paradigm.xyz/2021/08/two-rights-might-make-a-wrong for more information._
 
 ```solidity
-function batch(bytes[] calldata calls) external payable returns (bytes[] memory results);
+function batch(bytes[] calldata calls) external payable override returns (bytes[] memory results);
 ```
 
 **Parameters**
