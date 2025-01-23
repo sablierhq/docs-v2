@@ -12,14 +12,14 @@ Sablier protocols handle errors with the convenient and gas-efficient
 The error data encoding is identical to the ABI encoding used for functions, e.g.:
 
 ```solidity
-error SablierV2Lockup_Unauthorized(address caller, uint256 streamId);
+error SablierLockupBase_WithdrawAmountZero(uint256 streamId);
 ```
 
 Yields the following 4-byte selector in the contract's ABI:
 
 ```solidity
-bytes4(keccak256(bytes("SablierV2Lockup_Unauthorized(address,uint256)")))
-// 0xe10e8f6f
+bytes4(keccak256(bytes("SablierLockupBase_WithdrawAmountZero(uint256)")))
+// 0xf747ab7c
 ```
 
 ## Naming Pattern
@@ -33,17 +33,15 @@ multiple contracts.
 
 ## Lockup Error List
 
-### Core
+[Click here](lockup/contracts/libraries/library.Errors) to see the full error list in Lockup protocol.
 
-[Click here](lockup/core/libraries/library.Errors) to see the full error list in Lockup Core.
+## Airdrops Error List
 
-### Periphery
-
-[Click here](lockup/periphery/libraries/library.Errors) to see the full error list in Lockup Periphery.
+[Click here](airdrops/contracts/libraries/library.Errors) to see the full error list in Airdrops protocol.
 
 ## Flow Error List
 
-[Click here](flow/contracts/libraries/library.Errors) to see the full error list in Flow.
+[Click here](flow/contracts/libraries/library.Errors) to see the full error list in Flow protocol.
 
 ## Resources
 
