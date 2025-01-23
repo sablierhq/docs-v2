@@ -64,7 +64,7 @@ the `release` branch. Note that you will need [Foundry](https://getfoundry.sh/) 
 
 ```bash
 git clone git@github.com:sablier-labs/v2-periphery.git
-git checkout release
+git switch release
 bun install --frozen-lockfile
 bun run build:optimized
 ```
