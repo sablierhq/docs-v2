@@ -45,13 +45,13 @@ Generates the URI describing the Sablier Lockup stream NFTs.
 
 Creates and manages Lockup streams with three different streaming functions.
 
-## Airdrops
+## Merkle Airdrops
 
-> [**Airdrops Source Code**](https://github.com/sablier-labs/airdrops/tree/release)
+> [**Merkle Airdrops Source Code**](https://github.com/sablier-labs/airdrops/tree/release)
 
-The Airdrops repo is a collection of contracts to create various kinds of airdrop campaigns. Some of these campaigns
-make use of the Lockup protocol to create what we call [Airstreams](/concepts/lockup/airstreams). This repo consists of
-airdrop related contracts such as MerkleFactory, MerkleInstant, MerkleLL, and MerkleLT.
+The Merkle Airdrops repo is a collection of contracts to create various kinds of airdrop campaigns. Some of these
+campaigns make use of the Lockup protocol to create what we call [Airstreams](/concepts/lockup/airstreams). This repo
+consists of airdrops related contracts such as MerkleFactory, MerkleInstant, MerkleLL, and MerkleLT.
 
 ### MerkleFactory
 
