@@ -1,6 +1,6 @@
 ---
 id: "snapshot-voting"
-sidebar_position: 4
+sidebar_position: 5
 title: "Snapshot Voting"
 ---
 
@@ -107,7 +107,7 @@ For the best results, we recommend using the primary policies.
 The withdrawable amount counts tokens that have been streamed but not withdrawn yet by the recipient.
 
 This is provided using the
-[`withdrawableAmountOf`](/reference/lockup/core/abstracts/abstract.SablierV2Lockup#withdrawableamountof) contract
+[`withdrawableAmountOf`](/reference/lockup/contracts/abstracts/abstract.SablierLockupBase#withdrawableamountof) contract
 method.
 
 Voting power: realized (present).
@@ -140,7 +140,7 @@ Aggregates historical deposits up to the snapshot time, counting only the stream
 :::caution Caveats
 
 - Streaming, canceling and streaming again will cause tokens to be counted multiple times.
-- Takes into account streams created through [PRBProxy](/reference/lockup/periphery/contract.SablierV2BatchLockup)
+- Takes into account streams created through [PRBProxy](/reference/lockup/contracts/contract.SablierBatchLockup)
   instances configured through the official [Sablier Interface](https://app.sablier.com/).
 
 :::
@@ -151,7 +151,7 @@ Aggregates historical amounts that have already been streamed to the recipient. 
 included.
 
 It relies on the `streamedAmountOf` method in the
-[SablierV2Lockup](/reference/lockup/core/abstracts/abstract.SablierV2Lockup#streamedamountof) contract.
+[SablierV2Lockup](/reference/lockup/contracts/abstracts/abstract.SablierLockupBase#streamedamountof) contract.
 
 :::caution Caveats
 

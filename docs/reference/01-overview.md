@@ -29,7 +29,7 @@ Creates multiple streams in a single transaction.
 
 Library to validate input parameters across lockup streams.
 
-> [**VestingMath Library**](./lockup/contracts/libraries/VestingMath.Helpers)
+> [**VestingMath Library**](./lockup/contracts/libraries/library.VestingMath)
 
 Library to calculate vested amount across lockup streams.
 

@@ -11,7 +11,7 @@ import LockupDeployment from "@site/docs/snippets/LockupDeployment.mdx";
 # Create a Batch of Lockup Tranched Streams
 
 In this guide, we will show you how can use Solidity to batch create tranched streams via the Lockup's
-[Batch](/reference/lockup/periphery/contract.SablierV2BatchLockup) contract.
+[Batch](/reference/lockup/contracts/contract.SablierBatchLockup) contract.
 
 This guide assumes that you have already gone through the [Protocol Concepts](/concepts/streaming) section.
 
@@ -61,8 +61,8 @@ contract BatchLTStreamCreator {
 
 There are two batch create functions for the Lockup Tranched contract:
 
-- [`createWithDurationsLT`](/reference/lockup/periphery/contract.SablierV2BatchLockup#createwithdurationslt)
-- [`createWithTimestampsLT`](/reference/lockup/periphery/contract.SablierV2BatchLockup#createwithtimestampslt)
+- [`createWithDurationsLT`](/reference/lockup/contracts/contract.SablierBatchLockup#createwithdurationslt)
+- [`createWithTimestampsLT`](/reference/lockup/contracts/contract.SablierBatchLockup#createwithtimestampslt)
 
 Which one you choose depends upon your use case. In this guide, we will use `createWithTimestampsLT`.
 
@@ -71,7 +71,7 @@ Which one you choose depends upon your use case. In this guide, we will use `cre
 ## Stream Parameters
 
 Given that we declared a `batchSize` of two, we need to define two
-[BatchLockup.CreateWithTimestampsLT](/reference/lockup/periphery/types/library.BatchLockup#createwithtimestampslt)
+[BatchLockup.CreateWithTimestampsLT](/reference/lockup/contracts/types/library.BatchLockup#createwithtimestampslt)
 structs:
 
 ```solidity
