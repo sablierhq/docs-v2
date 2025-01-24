@@ -23,8 +23,8 @@ recipient will need to withdraw it.
 
 There are two functions that can be used to cancel streams:
 
-1. [`cancel`](/reference/lockup/core/abstracts/abstract.SablierV2Lockup#cancel): cancels a single stream
-2. [`cancelMultiple`](/reference/lockup/core/abstracts/abstract.SablierV2Lockup#cancelmultiple): cancels multiple
+1. [`cancel`](/reference/lockup/contracts/abstracts/abstract.SablierLockupBase#cancel): cancels a single stream
+2. [`cancelMultiple`](/reference/lockup/contracts/abstracts/abstract.SablierLockupBase#cancelmultiple): cancels multiple
    streams at once
 
 To call any of these functions, you need to have created a cancelable stream. If you don't have one yet, go back to the

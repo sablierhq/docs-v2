@@ -31,10 +31,20 @@ wallets.
 
 Admin has the following permissions on each chain where Lockup is deployed:
 
-| Permission         | Function                                                                                         |
-| ------------------ | ------------------------------------------------------------------------------------------------ |
-| Allow to Hook      | [allowToHook](../reference/lockup/core/abstracts/abstract.SablierV2Lockup#allowtohook)           |
-| Set NFT Descriptor | [setNFTDescriptor](../reference/lockup/core/abstracts/abstract.SablierV2Lockup#setnftdescriptor) |
+| Permission         | Function                                                                                                |
+| ------------------ | ------------------------------------------------------------------------------------------------------- |
+| Allow to Hook      | [allowToHook](../reference/lockup/contracts/abstracts/abstract.SablierLockupBase#allowtohook)           |
+| Set NFT Descriptor | [setNFTDescriptor](../reference/lockup/contracts/abstracts/abstract.SablierLockupBase#setnftdescriptor) |
+
+## Merkle Airdrops
+
+Admin has the following permissions on each chain where Merkle Airdrops is deployed:
+
+| Permission       | Function                                                                                       |
+| ---------------- | ---------------------------------------------------------------------------------------------- |
+| Reset Custom Fee | [resetCustomFee](../reference/airdrops/contracts/contract.SablierMerkleFactory#resetcustomfee) |
+| Set Custom Fee   | [setCustomFee](../reference/airdrops/contracts/contract.SablierMerkleFactory#setcustomfee)     |
+| Set Default Fee  | [setDefaultFee](../reference/airdrops/contracts/contract.SablierMerkleFactory#setdefaultfee)   |
 
 ## Flow
 

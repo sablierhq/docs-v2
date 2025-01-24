@@ -24,8 +24,9 @@ that the recipient of the stream has the ability to transfer the NFT to a differ
 streaming of assets to that new address.
 
 To transfer ownership of a stream, it is recommended to invoke the
-[`withdrawMaxAndTransfer`](/reference/lockup/core/abstracts/abstract.SablierV2Lockup#withdrawmaxandtransfer) function,
-which withdraws all the unclaimed funds to the current recipient prior to transferring ownership to the new recipient:
+[`withdrawMaxAndTransfer`](/reference/lockup/contracts/abstracts/abstract.SablierLockupBase#withdrawmaxandtransfer)
+function, which withdraws all the unclaimed funds to the current recipient prior to transferring ownership to the new
+recipient:
 
 ```solidity reference title="Stream Management: Withdraw and Transfer Ownership"
 https://github.com/sablier-labs/examples/blob/main/lockup/core/StreamManagement.sol#L72-L74

@@ -10,7 +10,7 @@ When the airdrop campaign contract is deployed for the first time on a chain, th
 it public and viewable on Etherscan. This guide will walk you through the process of verifying the campaign contract on
 Etherscan. If you get stuck, you can ask for help on [Discord](https://discord.sablier.com).
 
-As an example, we will use the `SablierV2MerkleLL` contract deployed on Polygon at
+As an example, we will use the `SablierMerkleLL` contract deployed on Polygon at
 [0x8BBe24ceee464e8A136fA19D2D099E2917837776](https://polygonscan.com/address/0x8bbe24ceee464e8a136fa19d2d099e2917837776).
 
 :::tip Good to Know
@@ -64,7 +64,7 @@ the `release` branch. Note that you will need [Foundry](https://getfoundry.sh/) 
 
 ```bash
 git clone git@github.com:sablier-labs/v2-periphery.git
-git checkout release
+git switch release
 bun install --frozen-lockfile
 bun run build:optimized
 ```
@@ -88,7 +88,7 @@ If the function name from Step 1 is `createMerkleLL`, run the following command:
 FOUNDRY_PROFILE=optimized \
 forge verify-contract --etherscan-api-key $ETHERSCAN_API_KEY --verifier-url $ETHERSCAN_URL \
 --constructor-args $CONSTRUCTOR_ARG $CONTRACT_TO_VERIFY \
-src/SablierV2MerkleLL.sol:SablierV2MerkleLL --watch
+src/SablierMerkleLL.sol:SablierMerkleLL --watch
 ```
 
 If the function name is `createMerkleLT`, run the following command:
