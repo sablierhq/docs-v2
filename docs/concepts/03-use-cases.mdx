@@ -9,12 +9,11 @@ import { links } from "@site/src/constants";
 
 While Lockup and Flow both are general-purpose protocols that can be used for a wide variety of applications, some use
 cases are more popular than others. In this article, we will cover the primary reasons people are using Sablier Lockup
-and Flow.
+and Sablier Flow.
 
 ## Sablier Lockup
 
-Sablier Lockup requires upfront deposit of the tokens into the streams. They have a start time, and an end time, and
-therefore are a great fit for Vesting.
+Sablier Lockup requires fixed dates and fixed amounts. When creating a stream, the total amount of tokens to be distributed needs to be deposited into the stream and you cannot add funds to an existing stream. Lockup streams have a fixed start date and end date, and cannot be extended. These properties make for an excellent user experience for vesting, as the terms are clear, defined and transparent. 
 
 ### Vesting
 
@@ -62,7 +61,7 @@ transaction on Etherscan, it's difficult to pin down to whom it was made, or for
 particularly relevant to DAOs, where transparency is critical to enabling contributors to understand how the treasury
 funds are allocated and for what purposes.
 
-With Sablier streams, the issues mentioned above are avoided. Anyone can use the Sablier Interface to monitor all
+With Sablier streams, the issues mentioned above are avoided. Anyone can use the Sablier interface to monitor all
 streams created by a particular address, as well as all transactions associated with each stream.
 
 To illustrate this, <Link href={links.example}>here</Link>'s an example of a stream as viewed on the Sablier Interface.
@@ -73,19 +72,18 @@ This section explores the use cases enabled by Merkle Airdrops.
 
 ### Instant airdrops
 
-Instant airdrops is the traditional way of running airdrops where tokens have no vesting and can instantly be claimed by
-the users. However, running an airdrop campaign can become very expensive if you are storing airdrop data on-chain.
+Instant airdrops is the traditional way of running airdrops where there's no vesting period and tokens can instantly be claimed by
+the recipients. Running an airdrop campaign can become very expensive if you are storing airdrop data on-chain, however.
 
-This is where Merkle Airdrops come into the picture. When you run a campaign with Sablier, the airdrops information is
+This is where Merkle Airdrops come into the picture. When you run a campaign with Sablier, the airdrop information is
 stored in a merkle tree, hosted on IPFS. The EVM storage only stores the root of the Merkle tree. At the time of claim,
-eligible users can provide merkle proof of their claims which is verified on-chain.
+eligible users can provide a merkle proof of their claim which is verified on-chain.
 
 This not only reduces cost of running an airdrop campaing but also inherits the security of the Sablier protocol.
 
 ### Streaming airdrops
 
-Instead of airdropping the entirety of the token allocation all at once, airdrop recipients receive a fraction of the
-tokens every second through a Sablier stream.
+With vested airdrops, also called Airstreams, instead of airdropping the entirety of the token allocation all at once, airdrop recipients receive a fraction of the tokens every second through a Sablier stream.
 
 A stream can have any duration you want. You can choose to vest your new token over a period of 6 months, 2 years, or
 any other duration you prefer. This way, airdrop recipients are forced to think about the project's long-term
@@ -104,16 +102,13 @@ If you are interested in airdropping your token, check out [Sablier website](htt
 
 ## Sablier Flow
 
-Unlike Lockup, Sablier Flow does not require upfront deposits, have no specific start and end time, and therefore offers
-more flexibility. This is best suited for payrolls and grant payments as described below.
+Unlike Lockup, Sablier Flow streams do not require upfront deposits, nor do they have fixed start and end dates. Flow is all about flexibility, making it ideal for use cases like payroll and grants.
 
 ### Payroll
 
-We all receive our salaries at the end of every month. What if your salary can be streamed to you in real time? Why
-should you wait for a month when you can get it every second? You can ask your employer to pay you using Sablier.
-Streaming salaries through Sablier can significantly enhance employee satisfaction and retention.
+What if your salary could be streamed to you in real time? Why should you wait for two weeks or a month when you can get it every second? Streaming salaries through Sablier significantly enhances employee satisfaction and retention.
 
-Your employer can create a Flow stream and keep funding it at the end of every month or in advance for you to withdraw
+Your employer can create a Flow stream and keep funding it at the end of every month or in advance, for you to withdraw
 your money.
 
 The benefits outlined in the "Efficiency" section earlier apply equally to this use case, since traditional payroll
@@ -139,10 +134,10 @@ monitor the flow of funds, providing assurance that the money is being used as i
 #### 2. Pay as they deliver
 
 Instead of lump-sum payments, you can use Sablier to stream funds continuously over a specified period. This ensures
-recipients have a steady cash flow and reduces the risk of mismanagement of funds. If grant recipient stops working on
+recipients have a steady cash flow and reduces the risk of mismanagement of funds. If a grant recipient stops working on
 their project, you can cancel the stream and retrieve back the remaining funds.
 
 #### 3. No Administrative Overhead
 
-All streamings through Sablier are automated, which means, you don't have to send funds manually at the end of every
+All streams through Sablier are automated, which means, you don't have to send funds manually at the end of every
 month.
